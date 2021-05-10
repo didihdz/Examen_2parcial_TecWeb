@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="row bg-dark table-responsive-sm" align="center" style=" margin: 0 auto;">
+        <table style="color: wheat;" class="bg-success">
+            <tr>
+                <th *ngFor="let column of headers" style="color: black;" > {{column}} </th>
+            </tr>
+            <tr>
+                <th *ngFor="let fila1 of uno"> {{fila1}} </th>
+            </tr>
+            <tr>
+                <th *ngFor="let fila2 of dos"> {{fila2}} </th>
+            </tr>
+            <tr>
+                <th *ngFor="let fila3 of tres"> {{fila3}} </th>
+            </tr>
+            <tr>
+                <th *ngFor="let fila4 of cuatro"> {{fila4}} </th>
+            </tr>
+            <tr>
+                <th *ngFor="let fila5 of cinco"> {{fila5}} </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="row bg-dark" align="center" style=" margin: 0 auto;">
+        <form style="margin-bottom: 20px; margin-top: 20px;">
+            <div class="form-group">
+              <label for="exampleFormControlInput1" class="bg-success" style="color: whitesmoke;">Correo</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="nombre" class="bg-success" style="color: whitesmoke;">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="David Sanchez Ramirez" required>
+            </div>
+            <div class="form-group">
+                <label for="tel" class="bg-success" style="color: whitesmoke;">Numero telefonico</label>
+                <input type="number" class="form-control" id="tel" placeholder="Escribe tu numero telefonico" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2" class="bg-success" style="color: whitesmoke;">¿Cuantas veces nos has visitao en este mes?</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2" required>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3 o mas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1" class="bg-success" style="color: whitesmoke;">¡Deja tu comenario!</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button style="margin-top: 10px;" class="btn btn-primary mb-2">ENVIAR</button>
+          </form>
+          <label for="bebida" class="bg-success" style="color: whitesmoke;">Pregunta Extra ¿Cual de los nuevas bebidas comprarias primero?</label>
+          <input type="text" [(ngModel)]="bebida" class="form-control" id="bebida" placeholder="Escribe tu respuesta">
+          <p style="color: whitesmoke;">¡Gracias por elegir! {{bebida}} </p>
+          
+        
+    </div>
+</body>
+</html>
